@@ -5,7 +5,7 @@
 
 **To start a development server:**
 
-`npm run build`
+`npm run dev`
 
 **Build for production:**
 

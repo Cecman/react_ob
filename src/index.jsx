@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import HelloWorld from './components/HelloWorld';
-import HelloWorldClass from './components/HelloWorldClass';
+import App from './components/App';
+import './scss/all.scss';
 
-const root = ReactDOM.createRoot(document.getElementById('app'));
-root.render(<HelloWorldClass />);
+ReactDOM.render(<App />, document.getElementById('movieapp'));
