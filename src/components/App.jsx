@@ -1,7 +1,8 @@
 import React from 'react';
+import MenuLink from './Atoms/MenuLink/MenuLink';
 
 function App() {
-  return <h1>Hello World!</h1>;
+  return <MenuLink label="This is a link" url="/" />;
 }
 
 export default App;
