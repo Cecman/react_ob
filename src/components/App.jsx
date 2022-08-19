@@ -1,8 +1,30 @@
 import React from 'react';
-import MenuLink from './Atoms/MenuLink/MenuLink';
+import MenuLinkList from './Molecules/MenuLinkList/MenuLinkList';
 
 function App() {
-  return <MenuLink label="This is a link" url="/" />;
+  const linkArray = [
+    {
+      key: 1,
+      label: 'Popular',
+      url: '/movie',
+    },
+    {
+      key: 2,
+      label: 'Now playing',
+      url: '/movie/now-playing',
+    },
+    {
+      key: 3,
+      label: 'Upcoming',
+      url: '/movie/upcoming',
+    },
+    {
+      key: 4,
+      label: 'Top rated',
+      url: '/movie/top-rated',
+    },
+  ];
+  return <MenuLinkList menuLinkArray={linkArray} />;
 }
 
 export default App;

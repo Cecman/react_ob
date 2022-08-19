@@ -1,6 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './components/App';
 import './scss/all.scss';
 
-ReactDOM.render(<App />, document.getElementById('movieapp'));
+const root = ReactDOM.createRoot(document.getElementById('movieapp'));
+root.render(<App />);
