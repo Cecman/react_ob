@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './MainMenuLink.scss';
 
-function Link({ label, url }) {
+function MainMenuLink({ label, url }) {
   const handleClick = (evt) => {
     //  prevent redirect
     evt.preventDefault();
@@ -16,13 +16,13 @@ function Link({ label, url }) {
   );
 }
 
-Link.defaultProps = {
+MainMenuLink.defaultProps = {
   url: '#',
 };
 
-Link.propTypes = {
+MainMenuLink.propTypes = {
   label: PropTypes.string.isRequired,
   url: PropTypes.string,
 };
 
-export default Link;
+export default MainMenuLink;
