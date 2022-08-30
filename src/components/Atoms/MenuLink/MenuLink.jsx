@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './MenuLink.scss';
+
+import styled from 'styled-components';
 
 function MenuLink({ label, url }) {
-  return (
-    <a href={url} className="menu__link">
-      {label}
-    </a>
-  );
+  const MenuLinkItem = styled.a`
+    color: #000;
+    text-decoration: none;
+  `;
+
+  return <MenuLinkItem href={url}>{label}</MenuLinkItem>;
 }
 
 MenuLink.propTypes = {

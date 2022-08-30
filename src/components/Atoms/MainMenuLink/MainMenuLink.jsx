@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import './MainMenuLink.scss';
+import styled from 'styled-components';
 
 function Link({ label, url }) {
   const handleClick = (evt) => {
@@ -9,10 +8,17 @@ function Link({ label, url }) {
     evt.preventDefault();
   };
 
+  const MainMenuLink = styled.a`
+    display: flex;
+    padding: 0.5rem;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  `;
   return (
-    <a href={url} onClick={handleClick} className="main-menu-link">
+    <MainMenuLink href={url} onClick={handleClick}>
       {label}
-    </a>
+    </MainMenuLink>
   );
 }
 
