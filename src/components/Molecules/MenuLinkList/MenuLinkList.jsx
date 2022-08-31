@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MenuLink from '../../Atoms/MenuLink/MenuLink';
-import './MenuLinkList.scss';
+import { MenuList, MenuListItem } from './MenuLinkList.styled';
 
 function MenuLinkList({ menuLinkArray }) {
   return (
-    <ul className="menu-link-list">
+    <MenuList>
       {menuLinkArray.map((link) => (
-        <li key={link.key} className="menu-link-list__item">
+        <MenuListItem key={link.key}>
           <MenuLink label={link.label} url={link.url} />
-        </li>
+        </MenuListItem>
       ))}
-    </ul>
+    </MenuList>
   );
 }
 
