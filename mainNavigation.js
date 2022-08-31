@@ -1,5 +1,6 @@
 const navigation = [
   {
+    key: 1,
     label: 'Movies',
     subMenu: [
       {
@@ -25,6 +26,7 @@ const navigation = [
     ],
   },
   {
+    key: 2,
     label: 'TV Shows',
     subMenu: [
       {
@@ -50,6 +52,7 @@ const navigation = [
     ],
   },
   {
+    key: 3,
     label: 'People',
     subMenu: [
       {
@@ -60,6 +63,7 @@ const navigation = [
     ],
   },
   {
+    key: 4,
     label: 'More',
     subMenu: [
       {
