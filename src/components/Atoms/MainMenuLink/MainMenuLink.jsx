@@ -1,26 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MainMenuLink from './MainMenuLink.styled';
+import MainMenuLinkItem from './MainMenuLink.styled';
 
-function Link({ label, url }) {
+function MainMenuLink({ label, url }) {
   const handleClick = (evt) => {
     //  prevent redirect
     evt.preventDefault();
   };
   return (
-    <MainMenuLink href={url} onClick={handleClick}>
+    <MainMenuLinkItem href={url} onClick={handleClick}>
       {label}
-    </MainMenuLink>
+    </MainMenuLinkItem>
   );
 }
 
-Link.defaultProps = {
+MainMenuLink.defaultProps = {
   url: '#',
 };
 
-Link.propTypes = {
+MainMenuLink.propTypes = {
   label: PropTypes.string.isRequired,
   url: PropTypes.string,
 };
 
-export default Link;
+export default MainMenuLink;

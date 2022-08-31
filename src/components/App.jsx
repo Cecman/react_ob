@@ -1,8 +1,8 @@
 import React from 'react';
-import MainMenuLink from './Atoms/MainMenuLink/MainMenuLink';
+import MainNavigation from './Organisms/MainNavigation/MainNavigation';
 
 function App() {
-  return <MainMenuLink label="Movies" />;
+  return <MainNavigation />;
 }
 
 export default App;
