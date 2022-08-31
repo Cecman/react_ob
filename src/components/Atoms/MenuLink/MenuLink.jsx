@@ -1,13 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './MenuLink.scss';
+import MenuLinkItem from './MenuLink.styled';
 
 function MenuLink({ label, url }) {
-  return (
-    <a href={url} className="menu__link">
-      {label}
-    </a>
-  );
+  return <MenuLinkItem href={url}>{label}</MenuLinkItem>;
 }
 
 MenuLink.propTypes = {

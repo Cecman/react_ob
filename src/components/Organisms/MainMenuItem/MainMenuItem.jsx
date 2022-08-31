@@ -31,7 +31,6 @@ MainMenuItem.propTypes = {
   linkLabel: PropTypes.string.isRequired,
   subMenu: PropTypes.arrayOf(
     PropTypes.shape({
-      key: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
     }),

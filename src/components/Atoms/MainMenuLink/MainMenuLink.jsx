@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import './MainMenuLink.scss';
+import MainMenuLinkItem from './MainMenuLink.styled';
 
 function MainMenuLink({ label, url }) {
   const handleClick = (evt) => {
     //  prevent redirect
     evt.preventDefault();
   };
-
   return (
-    <a href={url} onClick={handleClick} className="main-menu-link">
+    <MainMenuLinkItem href={url} onClick={handleClick}>
       {label}
-    </a>
+    </MainMenuLinkItem>
   );
 }
 
